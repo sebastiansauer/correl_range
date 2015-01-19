@@ -170,6 +170,14 @@ p2e
 ggsave(p2e, file = "p2e.png")
 
 
+# compare linear and quadratic model
+p3 <- ggplot(seq, aes(x = seq)) + stat_function(fun = function(x) x^2, colour =
+                                                  "dodgerblue3", size = 2) +
+  stat_function(fun = function(x) x, colour = "tomato3", size = 2) +
+  xlim(c(0,5))
+p3
+
+
 
 
 ########################
